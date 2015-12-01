@@ -2,28 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://swiftline.github.io/</loc>
     <lastmod>2015-11-30T20:32:35+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/included/</loc>
+    <loc>http://swiftline.github.io/post/included/</loc>
     <lastmod>2015-11-30T20:32:35+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/installation/</loc>
+    <loc>http://swiftline.github.io/post/installation/</loc>
     <lastmod>2015-10-30T20:32:35+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/other/usage/</loc>
+    <loc>http://swiftline.github.io/other/usage/</loc>
     <lastmod>2015-10-30T20:32:35+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/join/</loc>
+    <loc>http://swiftline.github.io/post/join/</loc>
     <lastmod>2015-11-30T20:32:35+00:00</lastmod>
   </url>
   

@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Others on Swiftline</title>
-    <link>http://localhost:1313/other/</link>
+    <link>http://swiftline.github.io/other/</link>
     <description>Recent content in Others on Swiftline</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 30 Oct 2015 20:32:35 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/other/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://swiftline.github.io/other/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Usage</title>
-      <link>http://localhost:1313/other/usage/</link>
+      <link>http://swiftline.github.io/other/usage/</link>
       <pubDate>Fri, 30 Oct 2015 20:32:35 +0000</pubDate>
       
-      <guid>http://localhost:1313/other/usage/</guid>
+      <guid>http://swiftline.github.io/other/usage/</guid>
       <description>
 
 &lt;h2 id=&#34;colorize:dc32fe45042973266ca60588597e0b66&#34;&gt;Colorize 🎨&lt;/h2&gt;

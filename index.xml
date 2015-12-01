@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Swiftline</title>
-    <link>http://localhost:1313/</link>
+    <link>http://swiftline.github.io/</link>
     <description>Recent content on Swiftline</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 30 Nov 2015 20:32:35 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://swiftline.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Whats included</title>
-      <link>http://localhost:1313/post/included/</link>
+      <link>http://swiftline.github.io/post/included/</link>
       <pubDate>Mon, 30 Nov 2015 20:32:35 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/included/</guid>
+      <guid>http://swiftline.github.io/post/included/</guid>
       <description>&lt;p&gt;Swiftline consists the following:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -30,10 +30,10 @@
     
     <item>
       <title>Installation</title>
-      <link>http://localhost:1313/post/installation/</link>
+      <link>http://swiftline.github.io/post/installation/</link>
       <pubDate>Fri, 30 Oct 2015 20:32:35 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/installation/</guid>
+      <guid>http://swiftline.github.io/post/installation/</guid>
       <description>
 
 &lt;p&gt;You can install Swiftline using cocoapods,&lt;/p&gt;
@@ -67,10 +67,10 @@ pod &#39;Swiftline&#39;
     
     <item>
       <title>Usage</title>
-      <link>http://localhost:1313/other/usage/</link>
+      <link>http://swiftline.github.io/other/usage/</link>
       <pubDate>Fri, 30 Oct 2015 20:32:35 +0000</pubDate>
       
-      <guid>http://localhost:1313/other/usage/</guid>
+      <guid>http://swiftline.github.io/other/usage/</guid>
       <description>
 
 &lt;h2 id=&#34;colorize:dc32fe45042973266ca60588597e0b66&#34;&gt;Colorize 🎨&lt;/h2&gt;
@@ -328,10 +328,10 @@ Env.values()
     
     <item>
       <title>Get help</title>
-      <link>http://localhost:1313/post/join/</link>
+      <link>http://swiftline.github.io/post/join/</link>
       <pubDate>Mon, 30 Nov 2015 20:32:35 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/join/</guid>
+      <guid>http://swiftline.github.io/post/join/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Join the chat on &lt;a href=&#34;https://gitter.im/Swiftline?utm_source=share-link&amp;amp;utm_medium=link&amp;amp;utm_campaign=share-link&#34;&gt;gitter&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Ping the author on twitter &lt;a href=&#34;http://twitter.com/@ifnottrue&#34;&gt;@ifnottrue&lt;/a&gt;&lt;/li&gt;
