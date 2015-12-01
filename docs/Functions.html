@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Functions  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+  </head>
+  <body>
+    <a title="Functions  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">Swiftline Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="https://github.com/swiftline/swiftline"><img src="img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">Swiftline Reference</a>
+        <img id="carat" src="img/carat.png" />
+        Functions  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/Args.html">Args</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/AskSettings.html">AskSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/ChooseSettings.html">ChooseSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Env.html">Env</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/RunSettings.html">RunSettings</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/ChoiceIndexType.html">ChoiceIndexType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Extensions/Double.html">Double</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/Float.html">Float</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/Int.html">Int</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/String.html">String</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:F9Swiftline5agreeFSSSb">agree(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:F9Swiftline3askFTSS18customizationBlockGSqFGCS_11AskSettingsSS_T___SS">ask(_:customizationBlock:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:F9Swiftline3askuRq_S_18ArgConvertibleType_FTSS4typeMq_18customizationBlockGSqFGCS_11AskSettingsq__T___q_">ask(_:type:customizationBlock:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:F9Swiftline6chooseurFFGCS_14ChooseSettingsq__T_q_">choose(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:F9Swiftline6chooseFtSS7choicesGSaSS__SS">choose(_:choices:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:F9Swiftline6chooseurFTMq_18costumizationBlockFGCS_14ChooseSettingsq__T__q_">choose(_:costumizationBlock:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:F9Swiftline6chooseurFTSS4typeMq_18costumizationBlockFGCS_14ChooseSettingsq__T__q_">choose(_:type:costumizationBlock:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:F9Swiftline3runFtSS4argsGSaSS__VS_10RunResults">run(_:args:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:F9Swiftline3runFTSS4argsGSaSS__VS_10RunResults">run(_:args:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:F9Swiftline3runFTSS4argsGSaSS_8settingsFCS_11RunSettingsT__VS_10RunResults">run(_:args:settings:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:F9Swiftline3runFTSS13settingsBlockFCS_11RunSettingsT__VS_10RunResults">run(_:settingsBlock:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:F9Swiftline17runWithoutCaptureFSSSi">runWithoutCapture(_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/ArgConvertibleType.html">ArgConvertibleType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Structs/EchoSettings.html">EchoSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ParsedArgs.html">ParsedArgs</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/RunResults.html">RunResults</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Functions</h1>
+            <p>The following functions are available globally.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:F9Swiftline5agreeFSSSb"></a>
+                    <a name="//apple_ref/swift/Function/agree(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:F9Swiftline5agreeFSSSb">agree(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Displays a yes/no prompt to the user</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">agree</span><span class="p">(</span><span class="nv">prompt</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>prompt</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The prompt to display</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>the user decision</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:F9Swiftline3runFtSS4argsGSaSS__VS_10RunResults"></a>
+                    <a name="//apple_ref/swift/Function/run(_:args:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:F9Swiftline3runFtSS4argsGSaSS__VS_10RunResults">run(_:args:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Executes a command and captures its output</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">run</span><span class="p">(</span><span class="nv">command</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">args</span><span class="p">:</span> <span class="kt">String</span><span class="o">...</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">RunResults</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>command</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the command to execute</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>args</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the parameters to pass to the command</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>RunResults describing the command results</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:F9Swiftline3runFTSS4argsGSaSS__VS_10RunResults"></a>
+                    <a name="//apple_ref/swift/Function/run(_:args:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:F9Swiftline3runFTSS4argsGSaSS__VS_10RunResults">run(_:args:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Executes a command and captures its output</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">run</span><span class="p">(</span><span class="nv">command</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">args</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">RunResults</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>command</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the command to execute</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>args</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the parameters to pass to the command</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>RunResults describing the command results</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:F9Swiftline3runFTSS13settingsBlockFCS_11RunSettingsT__VS_10RunResults"></a>
+                    <a name="//apple_ref/swift/Function/run(_:settingsBlock:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:F9Swiftline3runFTSS13settingsBlockFCS_11RunSettingsT__VS_10RunResults">run(_:settingsBlock:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Executes a command and captures its output</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">run</span><span class="p">(</span><span class="nv">command</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">settingsBlock</span><span class="p">:</span> <span class="p">(</span><span class="kt">RunSettings</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">))</span> <span class="o">-&gt;</span> <span class="kt">RunResults</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>command</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the command to execute</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>settingsBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>block that receives the settings to costumize the behavior of run</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>RunResults describing the command results</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:F9Swiftline3runFTSS4argsGSaSS_8settingsFCS_11RunSettingsT__VS_10RunResults"></a>
+                    <a name="//apple_ref/swift/Function/run(_:args:settings:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:F9Swiftline3runFTSS4argsGSaSS_8settingsFCS_11RunSettingsT__VS_10RunResults">run(_:args:settings:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Executes a command and captures its output</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">run</span><span class="p">(</span><span class="nv">command</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">args</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">],</span> <span class="nv">settings</span><span class="p">:</span> <span class="p">(</span><span class="kt">RunSettings</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">))</span> <span class="o">-&gt;</span> <span class="kt">RunResults</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>command</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the command to execute</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>args</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the parameters to pass to the command</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>settingsBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>block that receives the settings to costumize the behavior of run</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>RunResults describing the command results</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:F9Swiftline17runWithoutCaptureFSSSi"></a>
+                    <a name="//apple_ref/swift/Function/runWithoutCapture(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:F9Swiftline17runWithoutCaptureFSSSi">runWithoutCapture(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <pre class="highlight plaintext"><code>Execute a command in interactive mode, output won't be captured
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">runWithoutCapture</span><span class="p">(</span><span class="nv">command</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>command</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the command to execute</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>executed command exit code</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:F9Swiftline3askFTSS18customizationBlockGSqFGCS_11AskSettingsSS_T___SS"></a>
+                    <a name="//apple_ref/swift/Function/ask(_:customizationBlock:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:F9Swiftline3askFTSS18customizationBlockGSqFGCS_11AskSettingsSS_T___SS">ask(_:customizationBlock:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Display a promt to the user</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">ask</span><span class="p">(</span><span class="nv">prompt</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">customizationBlock</span><span class="p">:</span> <span class="p">(</span><span class="kt">AskSettings</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">&gt;</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>prompt</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The message to display</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>customizationBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The block to costumize the prompt before displaying</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The string enters from the user</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:F9Swiftline3askuRq_S_18ArgConvertibleType_FTSS4typeMq_18customizationBlockGSqFGCS_11AskSettingsq__T___q_"></a>
+                    <a name="//apple_ref/swift/Function/ask(_:type:customizationBlock:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:F9Swiftline3askuRq_S_18ArgConvertibleType_FTSS4typeMq_18customizationBlockGSqFGCS_11AskSettingsq__T___q_">ask(_:type:customizationBlock:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Display a promt to the user</p>
+
+<ul>
+<li><p>discussion: If the user enters a wrong type, ask will keep prompting until a correct value has been entered</p></li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="k">as</span><span class="n">k</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">ArgConvertibleType</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">prompt</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">,</span> <span class="nv">customizationBlock</span><span class="p">:</span> <span class="p">(</span><span class="kt">AskSettings</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>prompt</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The message to display</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The value type to be expected from the user</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>customizationBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The block to costumize the prompt before displaying</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The string casted to the type requested</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:F9Swiftline6chooseFtSS7choicesGSaSS__SS"></a>
+                    <a name="//apple_ref/swift/Function/choose(_:choices:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:F9Swiftline6chooseFtSS7choicesGSaSS__SS">choose(_:choices:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Presents a user with a menu of items to choose from</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">choose</span><span class="p">(</span><span class="nv">prompt</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">choices</span><span class="p">:</span> <span class="kt">String</span><span class="o">...</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>prompt</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The menu prompt message</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>choices</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>List of choices</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The user selected item</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:F9Swiftline6chooseurFFGCS_14ChooseSettingsq__T_q_"></a>
+                    <a name="//apple_ref/swift/Function/choose(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:F9Swiftline6chooseurFFGCS_14ChooseSettingsq__T_q_">choose(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Presents a user with a menu of items to choose from</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">choose</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">costumizationBlock</span><span class="p">:</span> <span class="p">(</span><span class="kt">ChooseSettings</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">))</span> <span class="o">-&gt;</span> <span class="kt">T</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>costumizationBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Closure to be called with a ChooseSettings, changes to the settings are reflected to the prompt</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The user selected item</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:F9Swiftline6chooseurFTSS4typeMq_18costumizationBlockFGCS_14ChooseSettingsq__T__q_"></a>
+                    <a name="//apple_ref/swift/Function/choose(_:type:costumizationBlock:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:F9Swiftline6chooseurFTSS4typeMq_18costumizationBlockFGCS_14ChooseSettingsq__T__q_">choose(_:type:costumizationBlock:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Presents a user with a menu of items to choose from</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">choose</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">prompt</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">,</span> <span class="nv">costumizationBlock</span><span class="p">:</span> <span class="p">(</span><span class="kt">ChooseSettings</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">))</span> <span class="o">-&gt;</span> <span class="kt">T</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>prompt</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The menu prompt message</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The value type to be expected from the user</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>costumizationBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Closure to be called with a ChooseSettings, changes to the settings are reflected to the prompt</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The user selected item</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:F9Swiftline6chooseurFTMq_18costumizationBlockFGCS_14ChooseSettingsq__T__q_"></a>
+                    <a name="//apple_ref/swift/Function/choose(_:costumizationBlock:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:F9Swiftline6chooseurFTMq_18costumizationBlockFGCS_14ChooseSettingsq__T__q_">choose(_:costumizationBlock:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Presents a user with a menu of items to choose from</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">choose</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">type</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">,</span> <span class="nv">costumizationBlock</span><span class="p">:</span> <span class="p">(</span><span class="kt">ChooseSettings</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">))</span> <span class="o">-&gt;</span> <span class="kt">T</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The value type to be expected from the user</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>costumizationBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Closure to be called with a ChooseSettings, changes to the settings are reflected to the prompt</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The user selected item</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2015 <a class="link" href="https://nsomar.com" target="_blank" rel="external">NSOmar</a>. All rights reserved. (Last updated: 2015-11-28)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.4.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
