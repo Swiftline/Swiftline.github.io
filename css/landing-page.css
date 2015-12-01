@@ -29,19 +29,17 @@ h6 {
 }
 
 .intro-header {
-    padding-top: 90px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-    padding-bottom: 50px;
+    padding-top: 40px;
     text-align: center;
     color: #f8f8f8;
-    background: url(../img/intro-bg.svg) no-repeat left center;
-    background-size: 400px;
 }
 
 .intro-message {
     position: relative;
-    padding-top: 5%;
+    padding-top: 8%;
     padding-bottom: 5%;
     color: rgb(51, 51, 51);
+    text-align: left;
 }
 
 .intro-message > h1 {
@@ -59,30 +57,6 @@ h6 {
 
 }
 
-@media(max-width:767px) {
-    .intro-message {
-        padding-bottom: 15%;
-    }
-
-    .intro-message > h1 {
-        font-size: 3em;
-    }
-
-    ul.intro-social-buttons > li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-    }
-
-    ul.intro-social-buttons > li:last-child {
-        margin-bottom: 0;
-    }
-
-    .intro-divider {
-        width: 100%;
-    }
-}
-
 .network-name {
     text-transform: uppercase;
     font-size: 14px;
@@ -93,6 +67,10 @@ h6 {
 .container {
     width: 900px;
     line-height: 1.2em;
+}
+
+.header-container {
+    width: 100%;
 }
 
 .container ul {
@@ -185,4 +163,44 @@ footer {
 
 p.copyright {
     margin: 15px 0 0;
+}
+
+
+@media(max-width:1000px) {
+    .intro-message {
+        padding-bottom: 15%;
+    }
+
+    .intro-message > h1 {
+        font-size: 3em;
+    }
+
+    ul.intro-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.intro-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .intro-divider {
+        width: 100%;
+    }
+
+    .container {
+       width: 80%;
+    }
+
+    .intro-message {
+        text-align: center;
+    }
+}
+
+.intro-image {
+    height: 300px;
+    margin-top: 50px;
+    background: url(../img/intro-bg.svg) no-repeat center center;
+    background-size: 400px;
 }
