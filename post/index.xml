@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Swiftline</title>
+    <link>http://localhost:1313/post/</link>
+    <description>Recent content in Posts on Swiftline</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 30 Nov 2015 20:32:35 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Whats included</title>
+      <link>http://localhost:1313/post/included/</link>
+      <pubDate>Mon, 30 Nov 2015 20:32:35 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/included/</guid>
+      <description>&lt;p&gt;Swiftline consists the following:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Colorize&lt;/strong&gt;: Helps adding colors to strings written to the terminal&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ask&lt;/strong&gt;:  Choose  and agree: Easily create prompt for asking the user more info&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Run&lt;/strong&gt;:  A quick way to run an external command and read its standard output and standard error.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Env&lt;/strong&gt;:  Read and write environment variables &lt;a href=&#34;http://ruby-doc.org/core-2.2.0/ENV.html&#34;&gt;ruby-flavored&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Args&lt;/strong&gt;: Parses command line arguments and return a hash of the passed flags&lt;/li&gt;
+&lt;li&gt;More components to come&amp;hellip;.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Installation</title>
+      <link>http://localhost:1313/post/installation/</link>
+      <pubDate>Fri, 30 Oct 2015 20:32:35 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/installation/</guid>
+      <description>
+
+&lt;p&gt;You can install Swiftline using cocoapods,&lt;/p&gt;
+
+&lt;h3 id=&#34;cocoapods:4c40a97dcf30b230e73eabba1323c21c&#34;&gt;Cocoapods&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;use_frameworks!
+pod &#39;Swiftline&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;carthage:4c40a97dcf30b230e73eabba1323c21c&#34;&gt;Carthage&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;github &#39;Swiftline/Swiftline&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;cocoapods-rome-plugin:4c40a97dcf30b230e73eabba1323c21c&#34;&gt;Cocoapods + Rome plugin&lt;/h3&gt;
+
+&lt;p&gt;If you want to use swiftline in a script you can use &lt;a href=&#34;https://github.com/neonichu/Rome&#34;&gt;Rome&lt;/a&gt; cocoapod plugin. This plugin builds the framework from the pod file and place them in a Rome directory.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;platform :osx, &#39;10.10&#39;
+plugin &#39;cocoapods-rome&#39;
+
+pod &#39;Swiftline&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;examples:4c40a97dcf30b230e73eabba1323c21c&#34;&gt;Examples&lt;/h3&gt;
+
+&lt;p&gt;A list of examples can be found on &lt;a href=&#34;https://github.com/oarrabi/Swiftline/tree/master/Examples&#34;&gt;github&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Get help</title>
+      <link>http://localhost:1313/post/join/</link>
+      <pubDate>Mon, 30 Nov 2015 20:32:35 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/join/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Join the chat on &lt;a href=&#34;https://gitter.im/Swiftline?utm_source=share-link&amp;amp;utm_medium=link&amp;amp;utm_campaign=share-link&#34;&gt;gitter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Ping the author on twitter &lt;a href=&#34;http://twitter.com/@ifnottrue&#34;&gt;@ifnottrue&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Submit an &lt;a href=&#34;https://github.com/Swiftline/Swiftline/issues/new&#34;&gt;issue&lt;/a&gt; on github&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Others on Swiftline</title>
+    <link>http://localhost:1313/other/</link>
+    <description>Recent content in Others on Swiftline</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 30 Oct 2015 20:32:35 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/other/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Usage</title>
+      <link>http://localhost:1313/other/usage/</link>
+      <pubDate>Fri, 30 Oct 2015 20:32:35 +0000</pubDate>
+      
+      <guid>http://localhost:1313/other/usage/</guid>
+      <description>
+
+&lt;h2 id=&#34;colorize:dc32fe45042973266ca60588597e0b66&#34;&gt;Colorize 🎨&lt;/h2&gt;
+
+&lt;p&gt;Colorize helps styling the strings before printing them to the terminal. You can change the text color, the text background and the text style.
+Colorize works by extending &lt;code&gt;String&lt;/code&gt; struct to add styling to it.&lt;/p&gt;
+
+&lt;p&gt;To change the text color, use either &lt;code&gt;string.f&lt;/code&gt; or &lt;code&gt;string.foreground&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-swift&#34;&gt;print(&amp;quot;Red String&amp;quot;.f.Red)
+print(&amp;quot;Blue String&amp;quot;.foreground.Blue)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To change the text background color, use either &lt;code&gt;string.b&lt;/code&gt; or &lt;code&gt;string.background&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-swift&#34;&gt;    print(&amp;quot;I have a white background&amp;quot;.b.White)
+    print(&amp;quot;My background color is green&amp;quot;.background.Green)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To change the text background style, use either &lt;code&gt;string.s&lt;/code&gt; or &lt;code&gt;string.style&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-swift&#34;&gt;    print(&amp;quot;I am a bold string&amp;quot;.s.Bold)
+    print(&amp;quot;I have an underline&amp;quot;.style.Underline)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You can compose foreground, background, and style:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-swift&#34;&gt;    print(&amp;quot;I am an underlined red on white string&amp;quot;.s.Underline.f.Red.b.White)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;ask-choose-agree:dc32fe45042973266ca60588597e0b66&#34;&gt;Ask, Choose, Agree ❓&lt;/h2&gt;
+
+&lt;p&gt;Ask, Choose and Agree are used to prompt the user for more information.&lt;/p&gt;
+
+&lt;h3 id=&#34;ask:dc32fe45042973266ca60588597e0b66&#34;&gt;Ask&lt;/h3&gt;
+
+&lt;p&gt;Ask presents the user with a prompt and waits for the user input.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-swift&#34;&gt;    let userName = ask(&amp;quot;Enter user name?&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;userName&lt;/code&gt; will contain the name entered by the user&lt;/p&gt;
+
+&lt;p&gt;Ask can be used to ask for value of Int, Double or Float types, to ask for an integer for example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-swift&#34;&gt;    let age = ask(&amp;quot;How old are you?&amp;quot;, type: Int.self)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If the user prints something thats not convertible to integer, a new prompt is displayed to him, this prompt will keep displaying until the user enters an Int:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;How old are you?
+None
+You must enter a valid Integer.
+?  Error
+You must enter a valid Integer.
+?  5
+5
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Validations are added by calling &lt;code&gt;addInvalidCase&lt;/code&gt; on &lt;code&gt;AskSettings&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-swift&#34;&gt;    let name = ask(&amp;quot;Who are you?&amp;quot;) { settings in
+        settings.addInvalidCase(&amp;quot;Snuffles is not allowed&amp;quot;) { value in
+            value.containsString(&amp;quot;Snuffles&amp;quot;)
+        }
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If the user entered &lt;code&gt;Snuffles&lt;/code&gt; ask will keep displaying the invalid message passed to &lt;code&gt;addInvalidCase&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Who are you?
+Snuffles
+Snuffles is not allowed
+?  Snuffles
+Snuffles is not allowed
+?  Snowball
+
+Your name is Snowball
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;AskSettings.confirm&lt;/code&gt; will ask the user to confirm his choice after entering it&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-swift&#34;&gt;    let name = ask(&amp;quot;Who are you?&amp;quot;) { settings in
+        settings.confirm = true
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The above will output:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Who are you?
+Snuffles
+Are you sure?  YES
+
+Your name is Snuffles
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;choose:dc32fe45042973266ca60588597e0b66&#34;&gt;Choose&lt;/h3&gt;
+
+&lt;p&gt;Choose is used to prompt the user to select an item between several possible items.&lt;/p&gt;
+
+&lt;p&gt;To display a choice of programming lanaugage for example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-swift&#34;&gt;    let choice = choose(&amp;quot;Whats your favorite programming language? &amp;quot;,
+        choices: &amp;quot;Swift&amp;quot;, &amp;quot;Objective C&amp;quot;, &amp;quot;Ruby&amp;quot;, &amp;quot;Python&amp;quot;, &amp;quot;Java :S&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This will print:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;1. Swift
+2. Objective C
+3. Ruby
+4. Python
+5. Java :S
+Whats your favorite programming language?
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The user can either choose the numbers (1..5) or the item itself. If the user enters a wrong input. A prompt will keep showing until the user makes a correct choice&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Whats your favorite programming language? JavaScript
+You must choose one of [1, 2, 3, 4, 5, Swift, Objective C, Ruby, Python, Java :S].
+?  BBB
+You must choose one of [1, 2, 3, 4, 5, Swift, Objective C, Ruby, Python, Java :S].
+?  Swift
+
+You selected Swift, good choice!
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You can customize the return value for each choice element. For example if you want to get an Int from the choice, you would do this&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-swift&#34;&gt;    let choice = choose(&amp;quot;Whats your favorite programming language? &amp;quot;, type: Int.self) { settings in
+        settings.addChoice(&amp;quot;Swift&amp;quot;) { 42 }
+        settings.addChoice(&amp;quot;Objective C&amp;quot;) { 20 }
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The number on the left can be changed to letters, here is how you could do that:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-siwft&#34;&gt;    let choice = choose(&amp;quot;Whats your favorite programming language? &amp;quot;, type: String.self) { settings in
+        //choice value will be set to GOOD
+        settings.addChoice(&amp;quot;Swift&amp;quot;) { &amp;quot;GOOD&amp;quot; } 
+
+        //choice value will be set to BAD
+        settings.addChoice(&amp;quot;Java&amp;quot;) { &amp;quot;BAD&amp;quot; }
+        
+        settings.index = .Letters
+        settings.indexSuffix = &amp;quot; ----&amp;gt; &amp;quot;
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;That will print:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;a ----&amp;gt; Swift
+b ----&amp;gt; Java
+Whats your favorite programming language?
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;agree:dc32fe45042973266ca60588597e0b66&#34;&gt;Agree&lt;/h3&gt;
+
+&lt;p&gt;Agree is used to ask a user for a Yes/No question. It returns a boolean representing the user input.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-swift&#34;&gt;    let choice = agree(&amp;quot;Are you sure you want to `rm -rf /` ?&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If the user enters any invalid input, agree will keep prompting him for a Yes/No question&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Are you sure you want to `rm -rf /` ?  What!
+Please enter &amp;quot;yes&amp;quot; or &amp;quot;no&amp;quot;.
+Are you sure you want to `rm -rf /` ?  Wait
+Please enter &amp;quot;yes&amp;quot; or &amp;quot;no&amp;quot;.
+Are you sure you want to `rm -rf /` ?  No
+
+You entered false
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;run:dc32fe45042973266ca60588597e0b66&#34;&gt;Run 🏃&lt;/h2&gt;
+
+&lt;p&gt;Run provides a quick, concise way to run an external command and read its standard output and standard error.&lt;/p&gt;
+
+&lt;p&gt;To execute a simple command you would do:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-swift&#34;&gt;    let result = run(&amp;quot;ls -all&amp;quot;)
+    print(result.stdout)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;result&lt;/code&gt; type is &lt;code&gt;RunResults&lt;/code&gt;, it contains:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;exitStatus&lt;/code&gt;: The command exit status&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;stdout&lt;/code&gt;: The standard output for the command executed&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;stderr&lt;/code&gt;: The standard error for the command executed&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;While &lt;code&gt;run(&amp;quot;command&amp;quot;)&lt;/code&gt; can split the arguments by spaces. Some times argument splitting is not trivial. If you have multiple argument to pass to the command to execute, you should use &lt;code&gt;run(command: String, args: String...)&lt;/code&gt;. The above translates to:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-swift&#34;&gt;    let result = run(&amp;quot;ls&amp;quot;, args: &amp;quot;-all&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To customize the run function, you can pass in a customization block:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-swift&#34;&gt;    let result = run(&amp;quot;ls -all&amp;quot;) { settings in
+        settings.dryRun = true
+        settings.echo = [.Stdout, .Stderr, .Command]
+        settings.interactive = false
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;settings&lt;/code&gt; is an instance of RunSettings, which contains the following variables:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;settings.dryRun&lt;/code&gt;: defaults to false. If false, the command is actually run. If true, the command is logged to the stdout paramter of result&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;settings.echo&lt;/code&gt;: Customize the message printed to stdout, &lt;code&gt;echo&lt;/code&gt; can contain any of the following:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;EchoSettings.Stdout&lt;/code&gt;: The stdout returned from running the command will be printed to the terminal&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;EchoSettings.Stderr&lt;/code&gt;: The stderr returned from running the command will be printed to the terminal&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;EchoSettings.Command&lt;/code&gt;: The command executed will be printed to the terminal&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;settings.interactive&lt;/code&gt;: defaults to false. If set to true the command will be executed using &lt;code&gt;system&lt;/code&gt; kernel function and only the exit status will be captured. If set to false, the command will be executed using &lt;code&gt;NSTask&lt;/code&gt; and both stdout and stderr will be captured.
+Set &lt;code&gt;interactive&lt;/code&gt; to true if you expect the launched command to ask input from the user through the stdin.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code&gt;runWithoutCapture(&amp;quot;command&amp;quot;)&lt;/code&gt; is a quick way to run a command in interactive mode. The return value is the exit code of that command.&lt;/p&gt;
+
+&lt;h2 id=&#34;env:dc32fe45042973266ca60588597e0b66&#34;&gt;Env&lt;/h2&gt;
+
+&lt;p&gt;Env is used to read and write the environment variables passed to the script&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-swift&#34;&gt;// Set enviroment variable
+Env.set(&amp;quot;key1&amp;quot;, &amp;quot;value1&amp;quot;)
+
+// Get environment variable
+Env.get(&amp;quot;SomeKey&amp;quot;)
+
+// Clear all variables
+Env.clear()
+
+// Get all keys and values
+Env.keys()
+Env.values()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;args:dc32fe45042973266ca60588597e0b66&#34;&gt;Args&lt;/h2&gt;
+
+&lt;p&gt;Returns the arguments passed to the script. For example when calling &lt;code&gt;script -f1 val1 -f2 val2 -- val3 val4&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Args.all&lt;/code&gt; returns an array of all the raw arguments, in this example it will be &lt;code&gt;[&amp;quot;-f1&amp;quot;, &amp;quot;val1&amp;quot;, &amp;quot;-f2&amp;quot;, &amp;quot;val2&amp;quot;, &amp;quot;--&amp;quot;, &amp;quot;val3&amp;quot;, &amp;quot;val4&amp;quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Args.parsed&lt;/code&gt; returns a structure that contains a parsed map of arguments and an array of arguments, for this example:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Args.parsed.parameters&lt;/code&gt; returns &lt;code&gt;[&amp;quot;val3&amp;quot;, &amp;quot;val4&amp;quot;]&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Args.parsed.flags&lt;/code&gt; returns a dictinary of flags &lt;code&gt;[&amp;quot;f1&amp;quot;: &amp;quot;val1&amp;quot;, &amp;quot;f2&amp;quot;, &amp;quot;val2&amp;quot;]&lt;/code&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
