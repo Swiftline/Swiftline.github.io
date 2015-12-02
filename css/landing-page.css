@@ -202,3 +202,7 @@ p.copyright {
     background: url(../img/intro-bg.svg) no-repeat center center;
     background-size: 280px;
 }
+
+.github-btn {
+    margin-top: 10px;
+}
